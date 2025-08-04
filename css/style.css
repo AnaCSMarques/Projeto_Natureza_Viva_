@@ -30,6 +30,20 @@ header {
 }
 .menu-toggle { display: none; }
 
+.menu-toggle {
+  display: none; 
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  transition: max-height 0.3s ease;
+}
+
 /*Banner*/
 .banner {
   position: relative;
@@ -372,6 +386,7 @@ header {
   background-color: #c8e6c9;
 }
 
+
 /* Responsivo */
 @media (max-width: 600px) {
   .inscricao-overlay {
@@ -412,7 +427,7 @@ header {
 
 .footer-social {
   flex: 1 1 300px;
-  text-align: right; /* alinha tudo à direita */
+  text-align: right; 
 }
 
 .footer h3 {
@@ -430,7 +445,7 @@ header {
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: flex-end; /* garante alinhamento à direita */
+  align-items: flex-end; 
   gap: 0.5rem;
 }
 
@@ -452,74 +467,110 @@ header {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding-top: 1rem;
 }
-/* Header ajustes para menu hamburger */
-.menu-toggle {
-  display: none; /* padrão escondido */
-  font-size: 2.5rem;
-  cursor: pointer;
+.social-links a i {
+  margin-right: 8px;
   color: white;
+  transition: color 0.3s;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  transition: max-height 0.3s ease;
+.social-links a:hover i {
+  color: #c8e6c9;
 }
+
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  .nav-links {
-    position: absolute;
-    top: 64px; /* altura do header */
-    right: 0;
-    background-color: #2e7d32;
-    flex-direction: column;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-  }
+    /*header*/
+    .menu-toggle {
+        display: block;
+    }
 
-  .nav-links.show {
-    max-height: 300px; 
-  }
+    .nav-links {
+        flex-direction: column;
+        background-color: #2e7d32;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
 
-  .menu-toggle {
-    display: block;
-  }
+    .nav-links.active {
+        max-height: 300px; 
+    }
 
-/* Banner responsivo */
-.banner-content h1 {
-  font-size: 8rem;
-}
+    .nav-links li {
+        padding: 1rem;
+        text-align: center;
+    }
 
-.banner-content p {
-  font-size: 1.5rem;
-}
-  .banner-content h1 {
-    font-size: 3rem;
-    padding: 0 1rem;
-  }
-  .banner-content p {
-    font-size: 1.1rem;
-    padding: 0 1rem;
-  }
-  .banner-content .btn {
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-  }
-  .sobre-container {
-    flex-direction: column;
-  }
+    /*banner*/
+    .banner-content h1 {
+    font-size: 8rem;
+    }
 
-  .sobre-container img,
-  .sobre-texto {
-    width: 100%;
-    height: auto;
-  }
+    .banner-content p {
+    font-size: 1.5rem;
+    }
+    .banner-content h1 {
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+    .banner-content p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    .banner-content .btn {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    .sobre-container {
+        flex-direction: column;
+    }
 
-  .sobre-text-container {
-    padding: 1rem;
-    text-align: center;
+    .sobre-container img,
+    .sobre-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-text-container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /*Empresas e natureza*/
+    .empresas-naturesa {
+        flex-direction: column-reverse;
+    }
+
+    .empresas-naturesa img {
+        width: 100%;
+        height: auto;
+    }
+
+    .empresas-naturesa .sobre-texto {
+        padding: 1rem;
+    }
+
+    /* footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+
+    .footer-about {
+        text-align: center;
   }
 }

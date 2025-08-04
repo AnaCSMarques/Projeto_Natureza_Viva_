@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/*menu mobile */
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("active");
+    });
+  });
+
 /* Texto vindo das laterais */
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
