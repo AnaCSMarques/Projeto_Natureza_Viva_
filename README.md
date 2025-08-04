@@ -7,14 +7,11 @@ Projeto de site institucional voltado para a **preservação da natureza**, aç�
 ## 🧩 Funcionalidades
 
 - ✅ Menu fixo com navegação fluida
-- ✅ Banner com destaque e botão de ação
-- ✅ Seção "Sobre Nós" com animações e responsividade
-- ✅ Cards com projetos e eventos realizados
-- ✅ Galeria com zoom das áreas reflorestadas
+- ✅ Galeria  das áreas reflorestadas
 - ✅ Carrossel de patrocinadores com rolagem infinita
 - ✅ Formulário de inscrição para voluntários ou empresas
 - ✅ Responsivo para mobile e tablets
-- ✅ Animações suaves com Intersection Observer
+- ✅ Animações e responsividade
 
 ---
 
