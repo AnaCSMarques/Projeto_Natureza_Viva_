@@ -7,15 +7,15 @@
       <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Natureza Viva</div>
+     <header>
+        <div class="logo"> Natureza Viva</div>
         <nav class="nav">
-            <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre Nós</a></li>
-            <li><a href="#patrocinador">Torne-se um Patrocinador</a></li>
-            </ul>
-            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <li><a href="#patrocinador">Patrocinador</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
         </nav>
     </header>
     <!-- Banner -->
@@ -25,16 +25,6 @@
             <h1>Preserve o Futuro</h1>
             <p>Juntos pela preservação da natureza</p>
             <a href="#sobre" class="btn">Saiba Mais</a>
-        </div>
-    </section>
-    <!-- Sobre -->
-    <section class="sobre" id="sobre">
-        <div class="sobre-container">
-        <img src="/images/familia_plantando.jpeg" alt="Natureza">
-        <div class="sobre-texto">
-            <h2>Nosso Compromisso</h2>
-            <p>Estamos conectando pessoas e preservando ecossistemas com ações sustentáveis em todo o país.</p>
-        </div>
         </div>
     </section>
     <!-- Eventos Recentes -->
@@ -58,6 +48,17 @@
         </div>
         </div>
     </section>
+    <!-- Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="sobre-container">
+        <img src="/images/dando_as_maos.jpeg" alt="Natureza">
+        <div class="sobre-texto">
+            <h2>Nosso Compromisso</h2>
+            <p>Estamos conectando pessoas e preservando ecossistemas com ações sustentáveis em todo o país.</p>
+        </div>
+        </div>
+    </section>
+    
     <!-- Galeria de Parques -->
     <section class="parques">
     <h2>Ultimas áreas reflorestadas</h2>
@@ -103,8 +104,41 @@
     </div>
     </section>
 
+    <!-- Formulário de Inscrição -->
+    <section class="inscricao">
+    <div class="inscricao-overlay">
+        <h2>Receba nossas novidades diretamente no email!</h2>
+        <form>
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <button type="submit">Inscreva-se</button>
+        </form>
+    </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-about">
+        <h3>Sobre o Projeto</h3>
+        <p>
+            O Natureza Viva é um projeto dedicado à preservação ambiental, promovendo ações sustentáveis,
+            educação ecológica e engajamento da comunidade para garantir um futuro mais verde.
+        </p>
+        </div>
 
+        <div class="footer-social">
+        <h3>Redes Sociais</h3>
+        <ul class="social-links">
+            <li><a href="#" target="_blank">🌿 Instagram</a></li>
+            <li><a href="#" target="_blank">🐦 Twitter</a></li>
+            <li><a href="#" target="_blank">📘 Facebook</a></li>
+            <li><a href="#" target="_blank">▶️ YouTube</a></li>
+        </ul>
+        </div>
+    </div>
+    <p class="footer-copy">© 2025 Natureza Viva. Todos os direitos reservados.</p>
+    </footer>
 <script src="/js/script.js"></script>
 </body>
 </html>
