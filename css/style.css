@@ -23,7 +23,7 @@ header {
     display: flex;
     gap: 1rem;
 }
-.nav-links a {
+ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -385,23 +385,34 @@ header {
 .inscricao-overlay button:hover {
   background-color: #c8e6c9;
 }
-
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .inscricao-overlay {
-    padding: 1.5rem 1rem;
-  }
-
-  .inscricao-overlay h2 {
-    font-size: 1.4rem;
-  }
-
-  .inscricao-overlay input,
-  .inscricao-overlay button {
-    font-size: 0.95rem;
-  }
+.inscricao-overlay select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg fill='%232e7d32' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1.2rem;
 }
+
+.inscricao-overlay select:invalid {
+  color: #888;
+}
+
+.inscricao-overlay select:focus {
+  outline: 2px solid #2e7d32;
+  background-color: #e8f5e9;
+}
+
+
 
 
 /*Footer*/
@@ -507,6 +518,10 @@ header {
     }
 
     /*banner*/
+    .banner{
+        margin-top: 5rem;
+        height: 350px;
+    }
     .banner-content h1 {
     font-size: 8rem;
     }
@@ -526,6 +541,7 @@ header {
         padding: 0.6rem 1rem;
         font-size: 1rem;
     }
+    /*Sobre*/
     .sobre-container {
         flex-direction: column;
     }
@@ -572,5 +588,19 @@ header {
 
     .footer-about {
         text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .inscricao-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .inscricao-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .inscricao-overlay input,
+  .inscricao-overlay button {
+    font-size: 0.95rem;
   }
 }
