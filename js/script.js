@@ -28,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }, { threshold: 0.1 });
 
-    const elements = document.querySelectorAll('.animate-right, .animate-left');
+    const elements = document.querySelectorAll('.animate-right, .animate-left, .animate-from-bottom');
     elements.forEach(el => observer.observe(el));
   });

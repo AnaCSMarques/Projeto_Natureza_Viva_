@@ -154,7 +154,6 @@ header {
 }
 
 /*cards*/
-
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -195,6 +194,17 @@ header {
   font-size: 1rem;
   line-height: 1.4;
 }
+.animate-from-bottom {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-from-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Galeria */
 .parques {
