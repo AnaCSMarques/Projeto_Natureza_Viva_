@@ -26,3 +26,5 @@ Projeto de site institucional voltado para a **preservação da natureza**, aç�
 
 🙌 Agradecimentos
 Este projeto é dedicado a todos que acreditam em um futuro sustentável.
+
+---
