@@ -41,3 +41,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll('.animate-right, .animate-left, .animate-from-bottom');
     elements.forEach(el => observer.observe(el));
   });
+
+  /* ir até a section suavemente*/
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        const yOffset = -100; // ajusta esse valor conforme seu header
+        const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    });
+  });

@@ -1,0 +1,115 @@
+/* Mobile styles */
+@media (max-width: 768px) {
+    /*header*/
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        background-color: #2e7d32;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-links.active {
+        max-height: 300px; 
+    }
+
+    .nav-links li {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /*banner*/
+    .banner{
+        margin-top: 5rem;
+        height: 350px;
+    }
+    .banner-content h1 {
+    font-size: 8rem;
+    }
+
+    .banner-content p {
+    font-size: 1.5rem;
+    }
+    .banner-content h1 {
+        font-size: 3rem;
+        padding: 0 1rem;
+    }
+    .banner-content p {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+    .banner-content .btn {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+    /*Sobre*/
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-container img,
+    .sobre-texto {
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-text-container {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /*Empresas e natureza*/
+    .empresas-naturesa {
+        flex-direction: column-reverse;
+    }
+
+    .empresas-naturesa img {
+        width: 100%;
+        height: auto;
+    }
+
+    .empresas-naturesa .sobre-texto {
+        padding: 1rem;
+    }
+
+    /* footer */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer-social {
+        text-align: center;
+    }
+
+    .social-links {
+        align-items: center;
+    }
+
+}
+@media (max-width: 600px) {
+  .inscricao-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .inscricao-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .inscricao-overlay input,
+  .inscricao-overlay button {
+    font-size: 0.95rem;
+  }
+}
