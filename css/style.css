@@ -67,22 +67,46 @@ header {
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
+}
 
 /*Sobre*/
-}
 .sobre-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      align-items: center;
+  display: flex;
+  height: 100%;
+  min-height: 500px; /* altura mínima para garantir visibilidade */
+  align-items: stretch;
+  flex-wrap: wrap;
 }
+
 .sobre-container img {
-      width: 100%;
-      max-width: 950px;
+  width: 50%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
 }
+
 .sobre-texto {
-      flex: 1;
-      text-align: center;
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sobre-texto h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.sobre-text-container {
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.sobre-text-container p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
 
 /*Eventos*/
@@ -244,22 +268,25 @@ header {
   }
 }
 
+/* Formulário de Inscrição */
 .inscricao {
-  background-color: #2e7d32; /* fundo verde */
-  height: auto;
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 3rem 1rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .inscricao-overlay {
-  background-color: transparent;
-  padding: 2rem;
+  background-color: #2e7d32;
+  padding: 3rem;
+  border-radius: 10px;
   text-align: center;
   color: white;
-  max-width: 600px;
   width: 100%;
+  max-width: 500px;
 }
 
 .inscricao-overlay h2 {
@@ -279,6 +306,8 @@ header {
   font-size: 1rem;
   border-radius: 5px;
   border: none;
+  width: 100%;
+  max-width: 100%;
 }
 
 .inscricao-overlay input {
@@ -286,8 +315,8 @@ header {
 }
 
 .inscricao-overlay button {
-  background-color: #ffffff;   /* Botão branco */
-  color: #2e7d32;              /* Texto verde */
+  background-color: #ffffff;
+  color: #2e7d32;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease;
@@ -296,6 +325,23 @@ header {
 .inscricao-overlay button:hover {
   background-color: #c8e6c9;
 }
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .inscricao-overlay {
+    padding: 1.5rem 1rem;
+  }
+
+  .inscricao-overlay h2 {
+    font-size: 1.4rem;
+  }
+
+  .inscricao-overlay input,
+  .inscricao-overlay button {
+    font-size: 0.95rem;
+  }
+}
+
 
 /*Footer*/
 .footer {
@@ -389,13 +435,12 @@ header {
   }
 
   .nav-links.show {
-    max-height: 300px; /* suficiente para mostrar os links */
+    max-height: 300px; 
   }
 
   .menu-toggle {
     display: block;
   }
-}
 
 /* Banner responsivo */
 .banner-content h1 {
@@ -405,9 +450,6 @@ header {
 .banner-content p {
   font-size: 1.5rem;
 }
-
-/* Ajustes para telas pequenas */
-@media (max-width: 768px) {
   .banner-content h1 {
     font-size: 3rem;
     padding: 0 1rem;
@@ -419,5 +461,19 @@ header {
   .banner-content .btn {
     padding: 0.6rem 1rem;
     font-size: 1rem;
+  }
+  .sobre-container {
+    flex-direction: column;
+  }
+
+  .sobre-container img,
+  .sobre-texto {
+    width: 100%;
+    height: auto;
+  }
+
+  .sobre-text-container {
+    padding: 1rem;
+    text-align: center;
   }
 }
